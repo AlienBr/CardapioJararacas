@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio Digital - Jararacas</title>
+<link rel="icon" type="image/png" href="LogoJararacas.png">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    background-color: #df5014;
+    color: #fff;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+  }
+
+  /* Logo */
+  .logo {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Navegação */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    background-color: white;
+    color: #df5014;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 2em;
+    position: relative;
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+
+  .menu-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+  }
+
+  .dish {
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .dish:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+
+  .dish img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .dish h4 {
+    margin: 10px 0 8px;
+    color: #df5014;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .dish p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jararacas</h1>
+  <div class="nav-links">
+    <a href="#pratos">Pratos</a>
+    <a href="#sobremesas">Sobremesas</a>
+    <a href="#bebidas">Bebidas</a>
+  </div>
+</header>
+
+<!-- ==================== PRATOS ==================== -->
+<section id="pratos">
+<h2 id="cardapio">🍽️ Pratos</h2>
+<div class="menu-section">
+  <div class="dish"><img src="tilapia.jpg"><h4>Tilápia</h4><p>Acompanha arroz, feijão, salada com purê ou fritas.</p></div>
+  <div class="dish"><img src="linguica.jpg"><h4>Linguiça</h4><p>Acompanha arroz, feijão, salada, farofa e vinagrete.</p></div>
+  <div class="dish"><img src="frangoamilanesa.png"><h4>Frango à Milanesa</h4><p>Acompanha arroz, feijão e salada.</p></div>
+  <div class="dish"><img src="contramilanesa.jfif"><h4>Contra à Milanesa</h4><p>Contra-filé empanado e frito, servido com arroz e feijão.</p></div>
+  <div class="dish"><img src="parmegianafrango.jfif"><h4>Parmegiana de Frango</h4><p>Acompanha arroz e salada, com feijão ou fritas.</p></div>
+  <div class="dish"><img src="parmegianacarne.jfif"><h4>Parmegiana de Carne</h4><p>Acompanha arroz e salada, com feijão ou fritas.</p></div>
+  <div class="dish"><img src="contrafile.jpg"><h4>Contra com Fritas</h4><p>Arroz, feijão, salada e batata frita.</p></div>
+  <div class="dish"><img src="omelete.jfif"><h4>Omelete</h4><p>Acompanha arroz, feijão e salada.</p></div>
+  <div class="dish"><img src="pratocomchurrasco.jfif"><h4>Prato com Churrasco</h4><p>Arroz, maionese, vinagrete e 2 espetos.</p></div>
+  <div class="dish"><img src="feijoada.jfif"><h4>Feijoada</h4><p>Serve 1 pessoa (pequena) ou 2 pessoas (grande).</p></div>
+</div>
+</section>
+<!-- ==================== SOBREMESAS ==================== -->
+<section id="sobremesas">
+<h2>🍰 Sobremesas</h2>
+<div class="menu-section">
+  <div class="dish"><img src="tortaholandesa.jfif"><h4>Torta Holandesa</h4><p>Base crocante, creme de baunilha e cobertura de chocolate.</p></div>
+  <div class="dish"><img src="limao.jfif"><h4>Mousse de Limão</h4><p>Creme aerado de limão, doce e refrescante.</p></div>
+  <div class="dish"><img src="pave.jfif"><h4>Pavê</h4><p>Camadas de biscoito, creme doce e chocolate.</p></div>
+  <div class="dish"><img src="tiramissu.jfif"><h4>Tiramisù</h4><p>Camadas de café, mascarpone e cacau polvilhado.</p></div>
+</div>
+</section>
+<!-- ==================== BEBIDAS ==================== -->
+<section id="bebidas">
+<h2>🥤 Bebidas</h2>
+<div class="menu-section">
+  <div class="dish"><img src="agua.jfif"><h4>Água</h4></div>
+  <div class="dish"><img src="aguacomgas.jfif"><h4>Água com Gás</h4></div>
+  <div class="dish"><img src="tonica.jfif"><h4>Água Tônica Lata</h4></div>
+  <div class="dish"><img src="coca.jfif"><h4>Coca Cola 350 ML</h4></div>
+  <div class="dish"><img src="cocazero.jfif"><h4>Coca Cola Zero 350 ML</h4></div>
+  <div class="dish"><img src="coca600.jfif"><h4>Coca Cola 600 ML</h4></div>
+  <div class="dish"><img src="coca1l.jfif"><h4>Coca Cola 1 L</h4></div>
+  <div class="dish"><img src="fantalaranja.jfif"><h4>Fanta Laranja</h4></div>
+  <div class="dish"><img src="guarana.jfif"><h4>Guaraná 350 ML</h4></div>
+  <div class="dish"><img src="guaranazero.jfif"><h4>Guaraná Zero 350 ML</h4></div>
+  <div class="dish"><img src="guarana1l.jfif"><h4>Guaraná 1 L</h4></div>
+  <div class="dish"><img src="soda.jfif"><h4>Soda 350 ML</h4></div>
+  <div class="dish"><img src="citrus.jfif"><h4>Schweppes Citrus</h4></div>
+  <div class="dish"><img src="h2o.jfif"><h4>H2O 500 ML</h4></div>
+  <div class="dish"><img src="cafe.jfif"><h4>Café Expresso</h4></div>
+  <div class="dish"><img src="sucolaranja.jfif"><h4>Suco de Laranja</h4></div>
+  <div class="dish"><img src="sucolimao.jfif"><h4>Suco de Limão</h4></div>
+  <div class="dish"><img src="sucomaracuja.jfif"><h4>Suco de Maracujá</h4></div>
+  <div class="dish"><img src="jarrasuco.jpg"><h4>Jarra de Suco</h4></div>
+  <div class="dish"><img src="heineken.jfif"><h4>Cerveja Heineken 600 ML</h4></div>
+  <div class="dish"><img src="original.jfif"><h4>Cerveja Original 600 ML</h4></div>
+  <div class="dish"><img src="heinekenlongneck.jfif"><h4>Cerveja Long Neck Heineken 330 ML</h4></div>
+  <div class="dish"><img src="cachaca.jfif"><h4>Cachaça</h4></div>
+  <div class="dish"><img src="caipirinhacachaca.jfif"><h4>Caipirinha com Cachaça</h4></div>
+  <div class="dish"><img src="caipirinha.jfif"><h4>Caipirinha com Vodka</h4></div>
+  <div class="dish"><img src="51.jfif"><h4>Dose 51</h4></div>
+  <div class="dish"><img src="salinas.jfif"><h4>Dose Salinas</h4></div>
+  <div class="dish"><img src="seleta.jfif"><h4>Seleta</h4></div>
+  <div class="dish"><img src="saofrancisco.jfif"><h4>Dose São Francisco</h4></div>
+</div>
+</section>
+</body>
+</html>
